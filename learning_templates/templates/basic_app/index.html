@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+
+	{% block body_block %}
+		<h1>WELCOME TO INDEX</h1>
+		<h2>This is index.html page showing</h2>
+		<h1>{{ text|cut:'World!!' }}</h1>
+		<h1>{{ number|add:"100" }}</h1>
+	{% endblock %}
+
+	<!-- Filters in Django. it can be refernced from this documentation page 
+		https://docs.djangoproject.com/en/3.0/topics/templates/#filters -->
